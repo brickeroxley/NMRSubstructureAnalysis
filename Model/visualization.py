@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 from rdkit import Chem
 from rdkit.Chem import Draw
 
-# Plotting the progression of major matrics obtained during training
+# Plotting the progression of major metrics obtained during training
 def plot_training_history(history, save_path='results'):
     """Plot training and validation metrics"""    
     os.makedirs(save_path, exist_ok=True)
@@ -61,7 +61,7 @@ def plot_training_history(history, save_path='results'):
     plt.savefig(f'{save_path}/f1_history.png')
     plt.close()
 
-# Visualize model predicitons on a random selection of molecules in the test set
+# Visualize model predictions on a random selection of molecules in the test set
 def visualize_predictions(model, dataset, indices, device, substructure_file, save_dir='results/visualizations'):
     os.makedirs(save_dir, exist_ok=True)
     

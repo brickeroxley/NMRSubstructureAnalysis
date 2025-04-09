@@ -18,11 +18,11 @@ def combine_structures_to_csv(input_pattern, output_file):
     print(f"Combined {len(all_smiles)} structures into {output_file}")
 
 def main():
-    input_dir = r"C:\Users\Brickhouse\VSCode\Python\NMR Project\Selected_Structures"
+    input_dir = "NMR Project/Selected_Structures"
     
     input_pattern = os.path.join(input_dir, "*.txt")
     
-    output_file = r"C:\Users\Brickhouse\VSCode\Python\NMR Project\Selected_Structures\combined_structures.csv"
+    output_file = "NMR Project/Selected_Structures/combined_structures.csv"
 
     combine_structures_to_csv(input_pattern, output_file)
 

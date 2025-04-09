@@ -49,7 +49,7 @@ def train_model(model, train_loader, val_loader, num_epochs=20, lr=0.001, weight
             formula = batch['formula'].to(device)
             targets = batch['targets'].to(device)
             
-            # Zero the gradients, forward pass through model, calculates loss, backpropagates loss to compute gradients, and
+            # Zero the gradients, forward pass through model, calculates loss, back-propagates loss to compute gradients, and
             # updates model parameters using optimizer
             optimizer.zero_grad()
             outputs = model(h1_spectrum, c13_bins, formula)
@@ -145,7 +145,7 @@ def evaluate_model(model, test_loader, device, thresholds=None):
             formula = batch['formula'].to(device)
             targets = batch['targets'].to(device)
             
-            # Does a forward pass and calcualtes loss 
+            # Does a forward pass and calculates loss 
             outputs = model(h1_spectrum, c13_bins, formula)
             loss = criterion(outputs, targets)
             test_loss += loss.item() * h1_spectrum.size(0)

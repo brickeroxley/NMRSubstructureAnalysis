@@ -22,7 +22,7 @@ class NMRSubstructurePredictor(nn.Module):
         )
         
         # Branch 1: H1-NMR Spectral Processing (Broad patterns)
-        # Similar to narrow set-up but with larger kernal sizes for a greater breadth in feature extraction
+        # Similar to narrow set-up but with larger kernel sizes for a greater breadth in feature extraction
         # ReLU for non-linearity and MaxPooling to reduce dimensionality
         self.h1_conv_broad = nn.Sequential(
             nn.Conv1d(1, 32, kernel_size=25, stride=8, padding=12),

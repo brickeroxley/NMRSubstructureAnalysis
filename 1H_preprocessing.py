@@ -104,7 +104,7 @@ class H1NMRPreprocessor:
         real_interp = interp1d(shifts_sorted, reals_sorted, kind='linear', 
                               bounds_error=False, fill_value=0)
         
-        # Generate interpolated data between the generated values over the specified resolution and the intesity values from the spectral output
+        # Generate interpolated data between the generated values over the specified resolution and the intensity values from the spectral output
         real_spectrum = real_interp(std_shifts)
         
         # Normalize the spectrum so that the maximum intensity value is 1
@@ -216,6 +216,6 @@ if __name__ == "__main__":
             print(f"Peak {i+1}: {peak['multiplicity']} at {peak['centroid']} ppm, {peak['n_hydrogens']} H")
     
     # Process the full dataset
-    input_dir = "E:/Simulated_Spectra/simulation_out/1H"
+    input_dir = "Simulated_Spectra/simulation_out/1H"
     output_path = "Simulated_Spectra/simulation_out/1H_processed/preprocessed_h_nmr_data.h5"
     preprocessor.process_dataset(input_dir, output_path)

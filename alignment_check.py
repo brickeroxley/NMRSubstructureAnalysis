@@ -1,7 +1,7 @@
 import h5py
 
 with h5py.File('Simulated_Spectra/simulation_out/1H_processed/preprocessed_h_nmr_data.h5', 'r') as f1h:
-    h1_names = f1h['molecule_names'][:50000]  # First 10 molecule names
+    h1_names = f1h['molecule_names'][:50000] 
 
 with h5py.File('Simulated_Spectra/simulation_out/13C_processed/preprocessed_c_nmr_data.h5', 'r') as f13c:
     c13_names = f13c['molecule_names'][:50000]

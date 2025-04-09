@@ -71,7 +71,7 @@ class SubstructureFinder:
         print(f"Removed {len(self.substructures) - len(indices_to_keep)} duplicate substructures")
         print(f"Remaining substructures: {len(self.substructures)}")
 
-    # Finding substructures that differetiate two random pairs of structures from one another
+    # Finding substructures that differentiate two random pairs of structures from one another
     def find_differentiating_substructures(self, num_comparisons: int = 1, min_frequency: float = 0.5) -> List[str]:
         print(f"Starting with {len(self.molecules)} molecules")
         

@@ -180,6 +180,6 @@ if __name__ == "__main__":
         print(f"Peak data: {result['peak_data']}")
 
     # Process the full dataset
-    input_dir = "E:/Simulated_Spectra/simulation_out/13C"
+    input_dir = "Simulated_Spectra/simulation_out/13C"
     output_path = "Simulated_Spectra/simulation_out/13C_processed/preprocessed_c_nmr_data.h5"
     preprocessor.process_dataset(input_dir, output_path)

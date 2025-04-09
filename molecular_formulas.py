@@ -75,7 +75,7 @@ class MolecularFormulaGenerator:
             print(f"Error saving to CSV {output_file}: {e}")
             return False
     
-    # Saving the datafram to an HDF5 file which can be used within the ML architecutre
+    # Saving the dataframe to an HDF5 file which can be used within the ML architecture
     def save_to_hdf5(self, df, output_file):
         try:
             with h5py.File(output_file, 'w') as h5f:
