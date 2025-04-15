@@ -48,10 +48,14 @@ Before running the run_mestrenova_simulation.py file, ensure that the scripts co
 MestReNova executable. 
 
 The following commands will detail how to use the run_mestrenova_simulation.py file:
+
 1H NMR
+
 run_mestrenova_simulation --smiles_csv Selected_Structures/combined_structures.csv --out_folder Selected_Structures/simulation_out/1H --sim_type 1H --mnova_path <Absolute path to your MestReNova executable> --script_path <Absolute path to the folder containing the MestReNova scripts>
 
+
 13C NMR
+
 run_mestrenova_simulation --smiles_csv Selected_Structures/combined_structures.csv --out_folder Selected_Structures/simulation_out/13C --sim_type 13C --mnova_path <Absolute path to your MestReNova executable> --script_path <Absolute path to the folder containing the MestReNova scripts>
 
 Once the simulations are complete, run both the *1H_preprocessing.py*, *13C_preprocessing.py*,
